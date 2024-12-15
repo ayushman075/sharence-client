@@ -137,10 +137,10 @@ const MainSection = () => {
     if(preferences.shareEmail && !userDetails.email){
         showEditModal("email")
     }
-    else if(preferences.shareAddress && !userDetails.address){
+    if(preferences.shareAddress && !userDetails.address){
         showEditModal("address")
     }
-    else if(preferences.shareContactNumber && !userDetails.contactNumber){
+    if(preferences.shareContactNumber && !userDetails.contactNumber){
         showEditModal("contactNumber")
     }
   },[userDetails])
