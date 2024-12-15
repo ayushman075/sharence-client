@@ -264,7 +264,7 @@ const MainSection = () => {
                 <label className="text-gray-700 w-40 max-sm:w-32 capitalize font-medium" htmlFor={field}>
                   {field === "contactNumber" ? "Contact Number" :field}
                 </label>
-                <span className="text-gray-600">{value || "Not provided"}</span>
+                <span className="text-gray-600 max-sm:w-32 overflow-clip text-wrap">{value || "Not provided"}</span>
                 <button
                   onClick={() => showEditModal(field)}
                   className="text-blue-500 hover:underline text-sm"
